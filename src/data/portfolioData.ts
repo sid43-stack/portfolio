@@ -1,5 +1,8 @@
 import type { Project, SkillGroup, ValueCard, StrengthCard, FAQItem, EducationItem } from '../types/portfolio';
 
+const base = import.meta.env.BASE_URL || './';
+const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+
 export const CANDIDATE_INFO = {
   name: "Siddharth Goyal",
   title: "BCA Student | Customer Communication | Problem Solving | Technology",
@@ -12,7 +15,7 @@ export const CANDIDATE_INFO = {
   linkedinDisplay: "linkedin.com/in/siddharth-goyal-548001372",
   github: "https://github.com/sid43-stack",
   githubDisplay: "github.com/sid43-stack",
-  resumePath: "/resume/Siddharth_Goyal_Wipro.pdf",
+  resumePath: `${normalizedBase}resume/Siddharth_Goyal_Resume.pdf`,
   graduationYear: "2027",
   institute: "Institute of Information Technology and Management, Janakpuri",
   university: "GGSIPU",
